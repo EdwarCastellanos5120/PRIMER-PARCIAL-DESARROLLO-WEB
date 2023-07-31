@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('../img/fondo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.contact-form {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 800px; /* Set maximum width */
+    width: 90%; /* This allows the form to shrink on smaller screens */
+    margin: 50px auto;
+    /* Center the form horizontally */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-form h2 {
+  text-align: center;
+  font-size: 36px; /* Ajusta el tamaño del título para pantallas más grandes */
+  margin-bottom: 30px; /* Añade un margen inferior más grande al título */
+}
+
+.contact-form input,
+.contact-form textarea {
+  font-family: "Roboto Condensed", sans-serif;
+  display: block;
+  width: 100%;
+  padding: 15px; /* Aumenta el espaciado interno de los inputs */
+  margin-bottom: 20px; /* Ajusta el margen inferior de los inputs */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 18px; /* Ajusta el tamaño de fuente para pantallas más grandes */
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 15px; /* Aumenta el espaciado interno del botón */
+  background-color: #03001a;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px; /* Ajusta el tamaño de fuente para pantallas más grandes */
+}
+
+
+
+/* Estilos para pantallas más pequeñas */
+@media screen and (max-width: 600px) {
+  .contact-form {
+    max-width: 90%; /* Ajusta el ancho máximo para pantallas pequeñas */
+    margin-top: 20px; /* Ajusta el margen superior del formulario */
+  }
+
+  .contact-form h2 {
+    font-size: 30px; /* Ajusta el tamaño del título para pantallas pequeñas */
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 16px; /* Ajusta el tamaño de fuente para pantallas pequeñas */
+  }
+}
+
+@media screen and (min-width: 953px) {
+    .contact-form {
+        width: 80%; /* Increase the width on larger screens */
+      }
+    
+      .container {
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+  }
+
+  

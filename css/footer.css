@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+
+:root {
+  --color-Base: #03001a;
+  --color-Base2: #7e207a;
+  --color-Base3: #03001a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fcfcfc;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+main {
+  padding-bottom: 70px; /* Espacio para el footer en la parte inferior */
+}
+
+footer {
+  position: relative; /* Cambiado de sticky a relative */
+  background: var(--color-Base);
+  width: 100vw;
+  color: #fff;
+  max-height: 400px; /* Puedes ajustar este valor según sea necesario */
+  overflow-y: auto; /* Habilitamos el desplazamiento vertical si el contenido excede la altura máxima */
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px; /* Ajustar el padding para centrar el contenido */
+}
+
+.footer-content p {
+  max-width: 500px;
+  margin: 10px auto; /* Ajustar los márgenes para centrar el párrafo */
+  line-height: 28px;
+  font-size: 30px;
+  color: #fff;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1rem 0 0rem 0;
+}
+
+.socials li {
+  margin: 0 10px;
+}
+
+.socials a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px;
+}
+
+.socials a i {
+  font-size: 1.4rem;
+  width: 20px;
+}
+
+.socials a:hover {
+  background-color: transparent;
+  color: #f35b04;
+}
+
+@media (max-width: 500px) {
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .footer-menu ul {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 801px) {
+  main {
+    padding-bottom: 100px; /* Ajustamos el espacio para el footer en la parte inferior */
+  }
+
+  footer {
+    position: fixed; /* Cambiado de relative a fixed */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-height: initial; /* Reiniciamos el valor máximo de altura para pantallas más grandes */
+    overflow-y: initial; /* Reiniciamos el desplazamiento vertical para pantallas más grandes */
+  }
+}
