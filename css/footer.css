@@ -18,16 +18,16 @@ body {
 }
 
 main {
-  padding-bottom: 70px; /* Espacio para el footer en la parte inferior */
+  padding-bottom: 70px; 
 }
 
 footer {
-  position: relative; /* Cambiado de sticky a relative */
+  position: relative;
   background: var(--color-Base);
   width: 100vw;
   color: #fff;
-  max-height: 400px; /* Puedes ajustar este valor según sea necesario */
-  overflow-y: auto; /* Habilitamos el desplazamiento vertical si el contenido excede la altura máxima */
+  max-height: 400px; 
+  overflow-y: auto; 
 }
 
 .footer-content {
@@ -36,12 +36,12 @@ footer {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  padding: 10px; /* Ajustar el padding para centrar el contenido */
+  padding: 10px; 
 }
 
 .footer-content p {
   max-width: 500px;
-  margin: 10px auto; /* Ajustar los márgenes para centrar el párrafo */
+  margin: 10px auto; 
   line-height: 28px;
   font-size: 30px;
   color: #fff;
@@ -92,15 +92,15 @@ footer {
 
 @media (min-width: 801px) {
   main {
-    padding-bottom: 100px; /* Ajustamos el espacio para el footer en la parte inferior */
+    padding-bottom: 100px; 
   }
 
   footer {
-    position: fixed; /* Cambiado de relative a fixed */
+    position: fixed; 
     bottom: 0;
     left: 0;
     right: 0;
-    max-height: initial; /* Reiniciamos el valor máximo de altura para pantallas más grandes */
-    overflow-y: initial; /* Reiniciamos el desplazamiento vertical para pantallas más grandes */
+    max-height: initial; 
+    overflow-y: initial; 
   }
 }

@@ -28,14 +28,14 @@ h2 {
   text-align: justify;
 }
 
-#profile{
-    width: 230px;
-    height: 230px;
-    border-radius:20%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
+#profile {
+  width: 230px;
+  height: 230px;
+  border-radius: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 600px) {
@@ -78,10 +78,9 @@ h2 {
   }
 }
 
-/* Estilos base para los artículos */
 article {
   width: 100%;
-  max-width: 600px; /* Tamaño máximo para los artículos */
+  max-width: 600px;
   margin: 0 auto;
   padding: 20px;
   border: 1px solid #ccc;
@@ -94,8 +93,6 @@ article h1 {
   margin-bottom: 10px;
 }
 
-
-/* Estilos para las imágenes pequeñas */
 .images-container {
   display: flex;
   flex-wrap: wrap;
@@ -103,27 +100,25 @@ article h1 {
 }
 
 .images-container img {
-  width: 80px; /* Tamaño para las imágenes pequeñas */
+  width: 80px;
   height: 80px;
   margin: 5px;
   border-radius: 4px;
 }
 
-/* Estilos responsivos */
 @media (min-width: 769px) {
   .articles-container {
-    display: flex; /* Mostrar los artículos en una fila horizontal */
-    flex-wrap: wrap; /* Permitir que los artículos se envuelvan en filas adicionales */
-    justify-content: space-between; /* Distribuir los artículos de manera uniforme */
-  }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
-  article {
-    flex: 0 0 calc(33.33% - 20px); /* Tamaño para los artículos (1/3 del contenedor con un espacio entre ellos) */
-  }
+    article {
+      flex: 0 0 calc(33.33% - 20px);
+    }
 
-  .images-container img {
-    width: 50px; /* Ajustar el tamaño de las imágenes pequeñas en pantallas grandes */
-    height: 50px;
+    .images-container img {
+      width: 50px; 
+      height: 50px;
+    }
   }
 }
-
