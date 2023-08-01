@@ -1,0 +1,63 @@
+/* Estilos generales de la página */
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: #fcfcfc;
+  color: #000;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .video-container video {
+    width: 100%;
+    height: auto;
+  }
+
+/* Estilos para la clase "custom-form" */
+.custom-form input,
+.custom-form textarea,
+.custom-form select {
+  width: auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.custom-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.custom-form input[type="radio"],
+.custom-form input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.custom-form button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.custom-form button[type="submit"]:hover {
+  background-color: #0056b3;
+}

@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pagina Etiquetas</title>
-    <link rel="website icon" type="png"  href="img/icono.png">
+    <link rel="website icon" type="png" href="img/icono.png" />
     <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/etiquetas.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -31,20 +32,96 @@
         <li><a href="Contacto.html">Contacto</a></li>
       </ul>
     </nav>
-    <h1>Hola Edwar</h1>
 
+    <main>
+      <br />
+      <form action="" class="custom-form">
+        <label for="nombre">Nombre </label>
+        <input type="text" placeholder="Nombre" id="nombre" />
+        <br /><br />
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" required />
+        <br /><br />
+        <label for="email">email</label>
+        <input type="email" id="email" />
+        <br /><br />
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" />
+        <br /><br />
+        <label for="Color">Color</label>
+        <input type="color" id="color" />
+        <br /><br />
+        <label for="fecha">Fecha</label>
+        <input type="date" id="fecha" />
+        <br /><br />
+        <label for="hora">Hora</label>
+        <input type="time" id="hora" />
+        <br /><br />
+        <label for="numero">Numero</label>
+        <input type="number" id="numero" />
+        <br /><br />
+        <label for="url">URL</label>
+        <input type="url" id="url" />
+        <br /><br />
+        <label for="telefono">Telefono</label>
+        <input type="tel" id="telefono" />
+        <br /><br />
+        <label for="archivo">Archivo</label>
+        <input type="file" id="archivo" />
+        <br /><br />
+        <label for="area">Area de texto</label>
+        <textarea name="" id="area" cols="30" rows="10"></textarea>
+        <br /><br />
+        <label for="genero">Hombre</label>
+        <input type="radio" name="genero" id="genero" />
+        <br /><br />
+        <label for="genero">Mujer</label>
+        <input type="radio" name="genero" id="genero" />
+        <br /><br />
+        <label for="Select">Seleccion</label>
+        <select name="" id="Select">
+          <option value="1">Opcion 1</option>
+          <option value="2">Opcion 2</option>
+          <option value="3">Opcion 3</option>
+          <option value="4">Opcion 4</option>
+        </select>
+        <br /><br />
+        <label for="terminos">Acepto los terminos</label>
+        <input type="checkbox" id="terminos" />
+        <br /><br />
+        <input type="submit" />
+        <br /><br />
+      </form>
+      <div class="video-container">
+        <video autoplay muted controls>
+          <source src="img/video.mp4" type="video/mp4" loop >
+          Tu navegador no admite el elemento de video.
+        </video>
+        <br /><br />
+      </div>
+    </main>
     <footer>
       <div class="footer-content">
         <p>Copyright &copy;2023</p>
         <ul class="socials">
           <li>
-            <a href="https://www.facebook.com/profile.php?id=100007305919501" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100007305919501"
+              target="_blank"
+              ><i class="bi bi-facebook"></i
+            ></a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/edwar-alejandro-castellanos-portillo-5a444a229/" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a
+              href="https://www.linkedin.com/in/edwar-alejandro-castellanos-portillo-5a444a229/"
+              target="_blank"
+              ><i class="bi bi-linkedin"></i
+            ></a>
           </li>
           <li>
-            <a href="https://github.com/EdwarCastellanos5120" target="_blank"><i class="bi bi-github"></i></a>
+            <a href="https://github.com/EdwarCastellanos5120" target="_blank"
+              ><i class="bi bi-github"></i
+            ></a>
           </li>
         </ul>
       </div>
