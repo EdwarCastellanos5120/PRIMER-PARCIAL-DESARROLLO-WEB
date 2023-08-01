@@ -12,14 +12,17 @@
   list-style: none;
   box-sizing: border-box;
 }
+
 body {
   font-family: "Roboto Condensed", sans-serif;
 }
+
 nav {
   background: var(--color-Base);
   height: 80px;
   width: 100%;
 }
+
 label.logo {
   color: white;
   font-size: 35px;
@@ -27,15 +30,18 @@ label.logo {
   padding: 0 100px;
   font-weight: bold;
 }
+
 nav ul {
   float: right;
   margin-right: 20px;
 }
+
 nav ul li {
   display: inline-block;
   line-height: 80px;
   margin: 0 5px;
 }
+
 nav ul li a {
   color: white;
   font-size: 17px;
@@ -43,12 +49,14 @@ nav ul li a {
   border-radius: 3px;
   text-transform: uppercase;
 }
+
 a.active,
 a:hover {
   background: #fff;
   color: var(--color-Base);
   transition: 0.5s;
 }
+
 .checkbtn {
   font-size: 30px;
   color: white;
@@ -61,6 +69,8 @@ a:hover {
 #check {
   display: none;
 }
+
+
 @media (max-width: 952px) {
   label.logo {
     font-size: 30px;
@@ -70,7 +80,10 @@ a:hover {
     font-size: 16px;
   }
 }
+
+
 @media (max-width: 858px) {
+
   .checkbtn {
     display: block;
   }
@@ -84,11 +97,13 @@ a:hover {
     text-align: center;
     transition: all 0.5s;
   }
+
   nav ul li {
     display: block;
     margin: 50px 0;
     line-height: 30px;
   }
+
   nav ul li a {
     font-size: 20px;
     color: #03001a;
@@ -102,6 +117,7 @@ a:hover {
     left: 0;
   }
 }
+
 section {
   background: url(bg1.jpg) no-repeat;
   background-size: cover;
